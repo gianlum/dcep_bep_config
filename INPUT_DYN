@@ -1,0 +1,14 @@
+ &DYNCTL
+  l2tls=.TRUE.,
+    lcond=.TRUE.,
+    irk_order=3,
+    y_scalar_advect='Bott2_Strang',
+    nrdtau=6,
+    rdheight=12000.,
+    rlwidth=5000.,
+  lhordiff=.TRUE.,
+    hd_corr_u_bd=0.75,
+    hd_corr_t_bd=0.75,
+    hd_corr_p_bd=0.75,
+  lspecnudge=.FALSE.,
+ /END

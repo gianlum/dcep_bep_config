@@ -1,0 +1,9 @@
+ &DIACTL
+  n0gp=0,
+  hincgp=1.0,
+  lgplong=.TRUE.,
+  lgpshort=.FALSE.,
+  lgpspec=.FALSE.,
+  n0meanval=0,
+  nincmeanval=1,
+ /END

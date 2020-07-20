@@ -1,0 +1,46 @@
+ &LMGRID
+  startlat_tot = 1.02,
+  startlon_tot = 0.94, 
+  pollat       = 90.0, 
+  pollon       = 102.5,
+  polgam       = 180.0,
+  dlon         = 0.004, 
+  dlat         = 0.004,
+  ie_tot     = 200,
+  je_tot     = 170,
+  ke_tot     = 70,
+ /
+ &RUNCTL
+  ydate_ini     = '2016040100',
+  ydate_end     = '2016050000',
+  dt            = 5.0,
+  hstart        = 0.0,
+  hstop         = 721.0,
+  nprocx        = 30,
+  nprocy        = 24,
+  nprocio       = 0,
+  idbg_level    = 1000,
+  ldebug_io     = .TRUE.,
+  ldebug_gsp    = .TRUE.,
+  ldebug_dyn    = .TRUE.,
+  ldebug_con    = .TRUE.,
+  ldebug_tur    = .TRUE.,
+  ldebug_soi    = .TRUE.,
+  ldebug_rad    = .TRUE.,
+  ldiagnos      = .TRUE.,
+  ldump_ascii   = .TRUE.,
+  lphys         = .TRUE.,
+  luseobs       = .FALSE.,
+  !lreorder      = .TRUE.,
+  lreproduce    = .TRUE.,
+  itype_timing  = 4,
+  !ltime_barrier = .TRUE.,
+  ldatatypes    = .FALSE.,
+  nboundlines   = 3,
+  ncomm_type    = 1,
+ /
+# Tuning parameters from standard COSMO-5 namelist (EU165)
+# However, they differ from those of CORDEX SEA 
+ &TUNING
+  tur_len = 100.0,
+/
